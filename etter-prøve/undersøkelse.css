@@ -1,0 +1,33 @@
+#skjema {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+#skjema h1 {
+    text-align: center;
+}
+
+#skjema label {
+    margin-top: 10px;
+}
+
+#skjema input[type="text"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#skjema input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(21, 0, 128);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

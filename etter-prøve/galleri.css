@@ -1,0 +1,28 @@
+html {
+    background-color: rgb(9, 9, 33);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: black;
+    color: aliceblue;
+    width: 300px;
+    margin: 60px;
+}
+.box img{
+    width: 100%;
+}
+
+.btn {
+    border-radius: 15px;
+    border: 1px;
+    border: solid white;
+    background-color: rgb(8, 8, 69);
+    color: white;
+    cursor: pointer;
+}
