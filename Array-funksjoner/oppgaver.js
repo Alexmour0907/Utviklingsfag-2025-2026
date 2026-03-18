@@ -82,7 +82,7 @@ console.log("--- OPPGAVE 1 ---");
 console.log("Oppgave: Filtrer ut alle ord som har 3 eller flere ordklasser");
 // Skriv koden din her:
 const treEllerFlereOrdklasser = ordbok.filter(ordbok => ordbok.ordklasser.length >= 3);
-console.log(treEllerFlereOrdklasser)
+console.table(treEllerFlereOrdklasser)
 
 // =====================================
 // OPPGAVE 2: find
@@ -117,7 +117,7 @@ const arrayMedAlt = ordbok.map(ordbok => ({
     ord: ordbok.ord,
     antallOrdklasser: ordbok.ordklasser.length
 }));
-console.log(arrayMedAlt)
+console.table(arrayMedAlt)
 
 // =====================================
 // OPPGAVE 5: reduce
@@ -126,6 +126,10 @@ console.log(arrayMedAlt)
 console.log("\n--- OPPGAVE 5 ---");
 console.log("Oppgave: Beregn totalt antall ordklasser");
 // Skriv koden din her:
+const finnAntallOrdklasser = ordbok.reduce((total, ord) => {
+    return total + ord.ordklasser.length
+}, 0)
+console.log( "total ordklasser er: " + finnAntallOrdklasser)
 
 
 // =====================================
